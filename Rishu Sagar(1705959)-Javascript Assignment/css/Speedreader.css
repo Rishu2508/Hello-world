@@ -1,0 +1,131 @@
+*{
+	background: #efefef; 
+}
+body{
+	position: relative;
+	display: block;
+	top: 30px;
+	left: 23em;
+	height: 550px;
+	width: 650px;
+	background: rgb(224,255,255);
+	box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.4);
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+h1{
+	background: transparent;
+	font-family: "Bell MT";
+	
+}
+.display{ 
+	margin-bottom: 17px;
+	box-sizing: border-box;
+	height: 130px;
+	width: 600px;
+	padding: 10px;
+	font-family: "Palatino Linotype";
+	font-size: 36px;
+	text-align: center;
+	border: 1px green solid;
+	border-radius: 6px;
+}
+#controls{
+	background: transparent;
+	display:grid;
+	grid-template-columns: 30% 30% 40%;
+	grid-gap: 10px;
+	margin: auto; 
+	max-width: inherit;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#controls div{
+	background: transparent;
+	text-align: left;
+	height: 50px;
+	padding: 8px;
+	
+}
+#controls p{
+	background: transparent;
+	margin: 0;	padding: 0;
+	font-size: 1.1em;
+	font-family: "Bell MT"; 
+	text-align: left;
+	font-weight: bold;
+}
+hr{
+	position: relative;
+	margin-bottom:6px;
+	top: -7px;
+}
+#controls button{
+	display: inline-block;
+	position: relative;
+	top: -8px;
+	height: 25px;
+	width: 65px;
+	font-family: "Palatino Linotype";
+	font-size: 14px;
+	border-radius: 2px;
+	border:1px rgba(0,0,0,0.4) solid; 
+}
+#fsize{
+	position: relative;
+	left: -3px;
+	top: -8px;
+}
+#fsize ~ label{
+	background: transparent;
+	font-family: "Bell MT";
+	font-size: 14px;
+	position: relative;
+	left: -5px;
+	top: -8px;
+}
+.text{
+	background: transparent;
+
+}
+.text p{
+	font-size: 1.1em;
+	font-family: "Bell MT"; 
+	text-align: left;
+	font-weight: bold;
+	background: transparent;
+}
+.text hr{
+	position: relative;
+	top: -15px;
+	margin: 0;
+}
+textarea{
+	width: 92vh;
+    height: 100px;
+	box-sizing: border-box;
+	resize: none;
+	font-family: "Palatino Linotype";
+	font-size: 14px;
+}
+select{
+	position: relative;
+	top: -8px;
+	left: -8px;
+	height: 25px;
+	width: 100px;
+	font-family: "Palatino Linotype";
+	font-size: 14px;
+	border:1px rgba(0,0,0,0.4) solid;
+	border-radius: 2px;
+	/*cursor: pointer;*/
+}
+button:enabled,select,input[type=radio],label{
+	cursor: pointer;
+}
+button:disabled{
+	background: lightgrey;
+}
+

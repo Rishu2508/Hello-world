@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Additional Assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/Speedreader.css">
+    <script src="javascript/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="javascript/Speedreader.js"></script>
+</head>
+<body>
+	<!-- Heading -->
+	<h1>Speed Reader</h1>
+	<!-- Display -->
+	<input class="display" type="text" name="display" autocomplete="autocomplete" placeholder="Animation will be shown here">
+	<!-- Controls -->
+	<div id="controls">
+		<div>
+			<p>Play Controls:</p>
+			<hr>
+			<button class="start" onclick="split()">Start</button>
+			<button id="stop" disabled>Stop</button>
+		</div>
+		<div>
+			<p>Speed</p>
+			<hr>
+			<select>
+				<option value="500">50 wpm</option>
+				<option value="200">300 wpm</option>
+				<option value="171" selected>350 wpm</option>
+				<option value="150" >400 wpm</option>
+				<option value="133">450 wpm</option>
+				<option value="120">500 wpm</option>
+			</select>
+		</div>
+		<div>
+			<p>Size:</p>
+			<hr>
+			<input id="fsize" type="radio" name="size" value="36" checked>
+			<label for="Medium">Medium</label>
+			<input id="fsize" type="radio" name="size" value="48">
+			<label for="Big">Big</label>
+			<input id="fsize" type="radio" name="size" value="60">
+			<label for="Bigger">Bigger</label>
+		</div>
+	</div>
+	<br>
+	<br>
+	<!-- Text Area -->
+	<div class="text">
+		<p>Input Text</p>
+		<hr>
+		<textarea id="txtarea" ></textarea>
+	</div>
+</body>
+</html>
